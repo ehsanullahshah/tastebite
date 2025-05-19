@@ -20,7 +20,7 @@ header {
     text-align: center;
     background: linear-gradient(45deg, #ffcc00, #ff3300);
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 0px;
 }
 
 .menu h2 {
