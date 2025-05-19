@@ -88,21 +88,42 @@ header {
 
 }
 
-.delivery img {
-    width: 60px;
-    height: auto;
-    align-items: center;
-    border-radius: 25%;
-    box-shadow: 0 0 10px rgb(0, 0, 0);
+.delivery {
+    position: relative;
+    display: flex;
+    text-align: center;
+    margin-top: 0px;
 }
 
-.delivery p {
-    font-size: 16px;
+.delivery-text {
+    font-size: 20px;
+    align-items:center ;
+    justify-content: center;
     font-weight: bold;
     color: #ff3300;
-    margin: 0;
-    padding: 0;
-    text-align: center;
+}
+
+.delivery-image {
+    position: absolute;
+    top: 0px; /* Adjust this to fine-tune the overlap */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.delivery-image img {
+    width: 68px; /* Adjust size as needed */
+    opacity: 0.9; /* Slight transparency for a sleek look */
+}
+
+@keyframes moveDelivery {
+    0% { left: -100px; } /* Start position */
+    100% { left: 100%; } /* End position */
+}
+
+.delivery-image {
+    position: absolute;
+    top: 0px;
+    animation: moveDelivery 5s linear infinite;
 }
 
 
